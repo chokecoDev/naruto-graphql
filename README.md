@@ -5,8 +5,8 @@ El objetivo es proporcionar una APIs GraphQL para obtener información sobre Nin
 
 ## Requisitos
 
-- Node.js v12 o superior
-- npm v6 o superior
+- Node.js v22 o superior
+- npm v10 o superior
 
 ## Instalación
 
@@ -29,3 +29,6 @@ Para iniciar el servidor de desarrollo, ejecuta:
 
 ```sh
 npm run dev
+```
+
+![](./img/apolloServer.png)
