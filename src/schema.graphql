@@ -1,0 +1,33 @@
+type Query{
+    "Retorna los ninjas"
+    ninjas: [Ninja!]!
+    "Retorna un ninja específico"
+    ninja(id: ID!): Ninja
+}
+
+"Una colección de ninjas"
+type Ninja {
+    "ID del ninja"
+    id: ID!
+    "Nombre del ninja"
+    name: String!
+    "Jutsu del ninja"
+    jutsu: [String]
+    "Datos personales del ninja"
+    personal: PersonalData
+}
+
+"Datos personales del ninja"
+type PersonalData {
+    "Sexo del ninja"
+    sex: String!
+    "Clan del ninja"
+    clan: Clan!
+}
+
+type Clan {
+    "ID del clan"
+    id: ID!
+    "Clan del ninja"
+    name: String!
+}
